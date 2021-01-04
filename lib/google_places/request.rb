@@ -267,7 +267,7 @@ module GooglePlaces
     # @option options [Integer] :retry_options[:max] (0) the maximum retries
     # @option options [Integer] :retry_options[:delay] (5) the delay between each retry in seconds
     def self.photo_url(options = {})
-      request = new(PHOTO_URL, options, false)
+      request = new(PHOTO_URL, options)
       request.parsed_response
     end
 
